@@ -47,7 +47,7 @@ class CalculadoraLoca {
             case "*":
                 int[][] biderkatzeTaula = new int[num1][num2];
                 int lerroa = 1, zutabea = 1;
-                int lerroaIni = 1, zutabeaIni = 1;
+
                 for (int a = 0; a < biderkatzeTaula.length; a++) {
                     for (int b = 0; b < biderkatzeTaula[a].length; b++) {
                         biderkatzeTaula[a][b] = lerroa * zutabea;
@@ -55,13 +55,14 @@ class CalculadoraLoca {
 
                     }
                     lerroa = lerroa + 1;
-                    zutabea = zutabeaIni;
+                    zutabea = 1;
 
 
                 }
 
                 result = biderkatzeTaula[num1 - 1][num2 - 1];
                 break;
+
             case "/":
                 //el contador tiene que empezar en 1
                 int zatiketa=1;
